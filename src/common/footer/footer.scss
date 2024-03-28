@@ -1,0 +1,74 @@
+@import "../../scss/global.scss";
+
+.footFull{
+    width: 100%;
+    background: var(--footer-bg-color);
+    .mainFooter{
+        width: 100%;
+        @include flex-spacebet;
+        gap: 50px;
+        color: var(--primary-font-color);
+        // transform: translateY(50%);
+        // transition: 0.5s ease-in-out;
+        // &:hover{
+        //     transform: translateY(0%);
+        //     transition: 0.3s ease-in-out;
+        // }
+        .footer-links{
+            width: 100%;
+            // height: 260px;
+            @include flex-spacebet;
+            gap: 10px;
+            padding: 0 20px;
+            .menuFooter{
+                @include font-12;
+                height: 100%;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: column;
+                gap: 10px;
+                text-align: left;
+                max-width: 200px;
+                padding: 20px;
+                p{
+                    color: var(--p-info-gray);
+                    text-align: start;
+                    &:hover{
+                        color: var(--font-light-color);
+                        transition: 0.3s ease-in-out;
+                    }
+                }
+                .address{
+                    color: var(--font-light-color);
+                }
+                .about, .returnItem, .moneyReq, .employees{
+                    display: grid;
+                    gap: 5px;
+                    a{
+                        color: var(--primary-font-color);
+                        // &:hover{
+                        //     transition: 0.3s ease-in-out;
+                        // }
+                    }
+                }
+                .social{
+                    display: grid;
+                    gap: 10px;
+                    .iconFace{
+                        color: #094ae1;
+                    }
+                    .iconTwit{
+                        color: aquamarine;
+                    }
+                    .iconYT{
+                        color: #f00;
+                    }
+                }
+            }
+        }
+    }
+    .icon{
+        color: #000;
+    }
+}

@@ -1,0 +1,35 @@
+@import "../../../scss/global.scss";
+
+.shop-categories{
+    padding: 10px 0;
+    text-align: left;
+    .cates{
+        h2{
+            padding: 20px 0;
+            @include font-28;
+        }
+        .categories{
+            display: flex;
+            gap: 20px;
+            .card{
+                display: flex;
+                justify-content: space-between;
+                max-width: 333px;
+                max-height: 433px;
+                background-color: #bfea91;
+                h3{
+                    @include flex-centers;
+                    height: 100px;
+                    padding: 20px 5px;
+                    @include font-30;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    // padding: 10px;
+                }
+            }
+        }
+    }
+}
