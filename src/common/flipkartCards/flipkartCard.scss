@@ -1,0 +1,58 @@
+@import "../../scss/global.scss";
+
+.linearBg{
+    background: linear-gradient(90deg, #4987dec3 0%, #5791e2be 40%, #fcb045e6 100%);
+    .flipkart-cards {
+        @include flex-centers;
+        gap: 10px;
+        padding: 20px 20px 40px 20px;
+        color: #fff;
+        text-align: left;
+        .card1 {
+                background: linear-gradient(0deg, #5079dc 0%, #678debce 100%);
+                max-width: 664px;
+                @include flex-col-center;
+                border-radius: 15px;
+                h2 {
+                    max-width: 500px;
+                    padding: 75px 10px 10px 10px;
+                    font-size: 34px;
+                    font-weight: 700;
+                    span{
+                        color: #ff0;
+                    }
+                }
+                p{
+                    padding: 10px 0 20px 0;
+                    width: 500px;
+                }
+                img{
+                    border-bottom-left-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                }
+        }
+        .card2{
+                max-width: 587px;
+                background: linear-gradient(0deg, #41229a 0%, #593da5 50%, #8567d9 100%);
+                border-radius: 15px;
+                padding: 10px;
+                img{
+                    width: 100%;
+                }
+                h2{
+                    padding: 46px 0 0 0;
+                    @include font-57;
+                    font-weight: 500;
+                    max-width: 420px;
+                    margin: 0 auto;
+                }
+                p{
+                    padding: 20px 0 0 0;
+                    margin: 0 auto;
+                    z-index: 10;
+                    font-weight: 15px;
+                    max-width: 440px;
+                }
+        }
+    }
+}

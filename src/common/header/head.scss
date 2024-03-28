@@ -1,0 +1,21 @@
+@import "../../scss/global.scss";
+
+.mainHead{
+    background: var(--header-bg-color);
+    .header{
+        border-bottom: 2px solid var(--header-border-gray);
+    }
+}
+
+.me-auto{
+    width: 100%;
+    @include flex-spacebet;
+    justify-content: space-evenly;
+    .navbar-nav{
+        margin: 0;
+    }
+}
+.dropdown-menu {
+    background-color: #9699f5;
+}
+

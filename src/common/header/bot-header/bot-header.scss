@@ -1,0 +1,31 @@
+@import "../../../scss/global.scss";
+
+.main{
+    .headerItems{
+        max-width: 1000px;
+        @include flex-spacebet;
+        padding: 10px 0;
+        @media (max-width:768px) {
+            display: none;
+        }
+        .items{
+            font-size: 16px;
+            font-weight: 500;
+            @include flex-centers;
+            gap: 10px;
+            padding: 5px;
+            a{
+                color: black;
+            }
+            img{
+                height: 32px;
+                width: 32px;
+            }
+            &:hover{
+                background-color: #fcdf5b;
+                border-top: 2px solid var(--button-bg-blue);
+                transition: 0.3s ease-in-out;
+            }
+        }
+    }
+}

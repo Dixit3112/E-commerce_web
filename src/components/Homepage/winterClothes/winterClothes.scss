@@ -1,0 +1,94 @@
+@import "../../../scss/global.scss";
+
+.winterClothes{
+    text-align: left;
+    padding: 20px 0;
+    h2{
+        @include font-28;
+        font-weight: 700;
+        padding: 0 0 20px 0;
+    }
+    .clothesCard{
+            display: flex;
+            gap: 10px;
+            .veiw {
+                width: 220px;
+                text-align: start;
+                background-color: #efe1ff;
+                border-radius: 15px;
+                @include flex-col-center;
+                justify-content: space-between;
+                gap: 10px;
+                padding: 5px;
+                .img {
+                    @include flex-centers;
+                    max-width: 100%;
+                    height: 130px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .rating {
+                    width: 100%;
+                    p {
+                        width: 60px;
+                        color: var(--font-light-color);
+                        text-align: start;
+                        padding: 2px 25px 0 8px;
+                        border-radius: 13px;
+                        background-color: #0f0;
+                    }
+                }
+                .itemName {
+                    width: 100%;
+                    text-align: left;
+                    max-height: 70px;
+                    color: #000;
+                    @include font-12;
+                    font-weight: 600;
+                }
+                .info-Item{
+                    width: 100%;
+                    h4 {
+                        text-align: left;
+                        width: 100%;
+                        @include font-18;
+                        font-weight: 700;
+                    }
+                    
+                    span {
+                        width: 100%;
+                        text-align: left;
+                        display: flex;
+                        gap: 10px;
+                        @include font-14;
+                        del {
+                            color: var(--p-info-gray);
+                            font-weight: 600;
+                        }
+                        p {
+                            color: #15d115;
+                        }
+                    }
+                }
+            }
+            .more {
+                width: 130px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                a {
+                    text-align: center;
+                    width: 100%;
+                    color: var(--p-info-gray);
+                    transition: 0.3s ease-in-out;
+                    &:hover{
+                        color: var(--icon-hover-blue-color);
+                        transition: 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
